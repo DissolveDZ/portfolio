@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portfolio</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<div class="container">
+		<canvas id="graphCanvas"></canvas>
+		<div class="fade-out-text">Portfolio - Colin Bohn</div>
+
+		<a href="https://github.com/DissolveDZ" target="_blank">
+			<img src="resources/github-mark-white.png" alt="GitHub Logo" id="github-logo">
+		</a>
+
+		<div id="toggleText">High</div>
+
+		<div class="panel">
+			<div class="content">
+				<div class="arrow-right"></div>
+
+				<div class="about-me">
+					<h1><u>About me</u></h1>
+					<p>I'm a passionate programmer who's been programming in low-level languages <br> for about 5 years now.
+						My native language is german but i'm fluent in english.
+					</p>
+				</div>
+
+				<p class="quote">"We have come to know Mr. Bohn as an extremely motivated, reliable, and independent
+					employee who has always fulfilled all tasks assigned to him promptly and to our fullest satisfaction."
+					<br> <strong>- Knipl Kft.</strong>
+				</p>
+
+				<img src="resources/photo.png" alt="Image" id="image">
+
+				<div class="projects-text">
+					<h1>My Projects</h1>
+					<p>Here's a bunch of my projects. <br>
+						I mostly work in Rust, C and C++ but also have experience <br>
+						in other language like C#, Js and Python
+					</p>
+				</div>
+				<div class="title-panel">
+					<h2>Graphics Programming</h2>
+				</div>
+				<div class="panel-container">
+					<div class="panel-wrapper first hidden">
+
+						<h1>SpriteLight</h1>
+						<a href="https://github.com/DissolveDZ/SpriteLight/tree/hardware-sdf-font" target="_blank">
+							<img src="resources/daylight.png" alt="daylight">
+						</a>
+						<p>A game engine capable of 2D and 3D PBR written in C and OpenGL</p>
+						<a href="https://github.com/DissolveDZ/Weeds" target="_blank">
+							<img src="resources/plants.png" alt="Image 4">
+						</a>
+					</div>
+
+					<div class="pair-description-panel hidden">
+						<p class="info-text">
+							SpriteLight is my most recent game engine and I'm currently working on a rewrite in rust.
+							This project was started around September of 2023.
+							Using PBR and other modern
+							rendering methods. It also features hot-reloading and highly abstracted drawing functions.
+							The engine is also capable of rendering high-quality MSDF text on the gpu.
+							It's running on a differed pipeline and is capable of physically-based bloom etc.
+							<br><br>
+							C-Engine on the other hand is my first game engine which was originally written in C
+							and then rewritten using C++ using OOP syntax and most of what the language has to offer.
+						</p>
+					</div>
+
+					<div class="panel-wrapper second hidden">
+						<h1>C-Engine</h1>
+						<p>A game engine written in C++ and is capable of advanced 3D rendering using OpenGL</p>
+						<img src="resources/c-engine.png" alt="Image 3">
+					</div>
+				</div>
+				<div class="title-panel">
+					<h2>Software Development</h2>
+				</div>
+				<section class="hidden">
+					<div class="panel-wrapper">
+						<div class="description-panel">
+							<p class="info-text">
+								This project, was started around the 15th of march 2023.
+								In the image shown you can see about 31 million points being plotted in real-time.
+								The basic idea involved making an optimized graph due to a rendering technique me and my brother
+								developed.
+								Technologies used include: Rust, OpenGL and SDL3.
+								OpenGL was my choice due to it's level of control and how close it is to the hardware.
+								This project also compiles to web and it is currently also possible to make it an IOS application.
+							</p>
+						</div>
+						<h2>Data Visualization Program</h2>
+						<img src="resources/graph.png" alt="Image 2">
+						<p>A heavily optimized data visualization program
+							written in rust using opengl</p>
+					</div>
+				</section>
+
+				<div class="title-panel">
+					<h2>3D Graphic Design</h2>
+				</div>
+				<div class="graphic-images">
+					<img src="resources/graphic-design-mouse.png" alt="Image 5" class="graphic hidden">
+					<img src="resources/graphic-design-commercial.jpg" alt="Image 6" class="graphic hidden">
+					<img src="resources/graphic-design-list.png" alt="Image 7" class="graphic hidden">
+				</div>
+
+				<div class="title-panel">
+					<h2>Data Science</h2>
+				</div>
+
+				<section class="hidden">
+					<div class="panel-wrapper">
+						<div class="description-panel">
+							<p class="info-text">
+								I have experience making neural networks and running them on Gpus using CUDA.
+								The frameworks i used include: tch, candle, tensorflow and burn.
+							</p>
+						</div>
+						<h2>AI</h2>
+						<p>
+							Gpu accelerated regressional neural network
+						</p>
+					</div>
+				</section>
+				<div class="title-panel">
+					<h2>Game Development</h2>
+				</div>
+
+				<section class="hidden">
+					<div class="panel-wrapper">
+						<div class="description-panel">
+							<p class="info-text">I'm an advanced game developer and have experience in engines like
+								Unity, Unreal and Godot and have also contributed to some open-source game frameworks like raylib</p>
+						</div>
+						<h2>Professional Game Development</h2>
+					</div>
+				</section>
+
+			</div>
+		</div>
+	</div>
+	<script src="graph.js"></script>
+</body>
+
+</html>
