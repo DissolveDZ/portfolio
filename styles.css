@@ -242,12 +242,21 @@ canvas {
     z-index: 1;
 }
 
+#linkedin-logo {
+    position: fixed;
+    top: 20px;
+    right: 175px;
+    width: 100px;
+    height: auto;
+    z-index: 1;
+}
+
 #toggleText {
 	font-size: 50px;
 	color: deepskyblue;
   position: fixed;
   top: 50px;
-  right: 175px;
+  right: 300px;
 	z-index: 1;
 	text-shadow: 0 0 10px deepskyblue;
   cursor: pointer;
